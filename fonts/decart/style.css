@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'Dekar';
+	src: url('./Dekar-Light.otf');
+	src: local('Dekar-Light');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Dekar';
+	src: url('./Dekar-Regular.otf');
+	src: local('Dekar-Regular');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Decart";
+	src: url("decart.otf");
+	src: url("decart.otf") format("opentype");
+}

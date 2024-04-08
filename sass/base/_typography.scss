@@ -1,0 +1,47 @@
+body {
+  background: url(../../images/bg.webp) no-repeat #e1dedd;
+  background-size: cover;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #1c1c1c;
+  position: relative;
+
+  &.overflow-hidden {
+    overflow: hidden;
+  }
+}
+.container {
+  // max-width: 1720px;
+  // max-width: 1728px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.title {
+  line-height: 1.1;
+  font-family: "Decart";
+  font-size: 5.6vw;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+.title-big {
+  font-size: 83.46px;
+  font-weight: 400;
+  line-height: 118.27px;
+  letter-spacing: 1px;
+}
+.badge {
+  padding: 0 27px;
+  width: fit-content;
+  border-radius: 30px;
+  border: 1px solid #1c1c1c;
+  font-size: 15px;
+  margin-bottom: 30px;
+  height: 30px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
