@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: end;
-  flex-wrap: wrap;
   color: #fff;
+
   .outline__btn {
     line-height: 24px;
     text-align: center;
@@ -24,6 +24,9 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    &.media__block {
+      display: none;
+    }
 
     &-phone {
       color: #fff;
@@ -58,6 +61,44 @@
     }
     &:hover::before {
       transform: scale(1.1);
+    }
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .header {
+    justify-content: space-between;
+
+    &__right {
+      gap: 1rem;
+    }
+
+    &__call {
+      display: none;
+
+      &.media__block {
+        display: flex;
+        margin: 0;
+      }
+      &-icon {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    &__menu {
+      width: 47px;
+      height: 47px;
+    }
+    .outline__btn {
+      font-size: 12px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }

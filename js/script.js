@@ -278,4 +278,28 @@ window.addEventListener("DOMContentLoaded", () => {
     thumbnail: true,
     download: false,
   });
+
+  // select
+  const selectForm = document.querySelectorAll(".select__form");
+
+  selectForm.forEach((select) => {
+    const selectBox = select.querySelector(".select__box");
+    const selectOption = select.querySelector(".select__option-boxes");
+    const optionValue = select.querySelectorAll(".option__box");
+    const selectedText = select.querySelector(".selected__text");
+
+    function show(value, text) {
+      text.textContent = value;
+    }
+    optionValue.forEach((item) => {
+      item.addEventListener("click", () => {
+        optionValue.forEach((item) => {
+          item.classList.remove("active");
+        });
+        show(item.textContent.trim(), selectedText);
+        item.classList.toggle("active");
+        console.log(selectedText);
+      });
+    });
+  });
 });

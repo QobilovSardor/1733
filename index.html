@@ -63,25 +63,45 @@
         </div>
 
         <div itemscope class="intro__video-bg" itemtype="http://schema.org/VideoObject">
-          <iframe id="vimeo"
+          <!-- <iframe id="vimeo"
+            src="https://player.vimeo.com/video/880527324?autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;background=1"
+            frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="true" allow="autoplay"
+            muted="muted" title="intro bg video"></iframe> -->
+          <!-- <iframe id="vimeo"
             src="https://player.vimeo.com/video/880527324?autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;background=1"
             frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay"
-            muted="muted" title="intro bg video"></iframe>
+            muted="muted" title="intro bg video"></iframe> -->
+          <div class="video-container">
+            <video
+              src="https://storage.coverr.co/videos/GK300Fvvg4T1LYiC9SJpUAK36CDldcR7A?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6Ijg3NjdFMzIzRjlGQzEzN0E4QTAyIiwiaWF0IjoxNjE0NzE0NjcxfQ.EnOnRFM1w-1SJY_AfEhhjR6S_dPgXx0lj1kKMvZheTk"
+              autoplay loop muted></video>
+            <!-- <iframe id="vimeo"
+              src="https://player.vimeo.com/video/880527324?autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;background=1"
+              frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay"
+              muted="muted" title="intro bg video"></iframe> -->
+          </div>
         </div>
         <!-- header -->
         <div class="container">
           <header itemscope class="header" itemtype="http://schema.org/WPHeader">
-            <button itemprop="action" class="outline__btn" aria-label="Оставить заявку" data-contact-form-btn>
-              Оставить заявку
-            </button>
-            <div itemscope class="header__call">
+            <div itemscope class="header__call media__block">
               <img itemprop="image" class="header__call-icon" src="images/icons/phone.svg" alt="phone icon" width="48"
                 height="48" />
               <a itemprop="telephone" class="header__call-phone" href="tel:+78122236978">+7 812 223 69 78</a>
             </div>
-            <button itemprop="action" class="header__menu open__menu-btn">
-              <img itemprop="image" src="images/icons/hamburger.svg" alt="hamburger icon" width="18" height="16" />
-            </button>
+            <div class="header__right">
+              <button itemprop="action" class="outline__btn" aria-label="Оставить заявку" data-contact-form-btn>
+                Оставить заявку
+              </button>
+              <div itemscope class="header__call">
+                <img itemprop="image" class="header__call-icon" src="images/icons/phone.svg" alt="phone icon" width="48"
+                  height="48" />
+                <a itemprop="telephone" class="header__call-phone" href="tel:+78122236978">+7 812 223 69 78</a>
+              </div>
+              <button itemprop="action" class="header__menu open__menu-btn">
+                <img itemprop="image" src="images/icons/hamburger.svg" alt="hamburger icon" width="18" height="16" />
+              </button>
+            </div>
           </header>
 
           <div itemscope itemtype="http://schema.org/LocalBusiness" class="intro__info-box">
@@ -167,7 +187,8 @@
               <div class="map__box">
                 <iframe
                   src="https://yandex.uz/map-widget/v1/?ll=-0.090420%2C51.491708&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoyMjI5NzMwMDkzEhZVbml0ZWQgS2luZ2RvbSwgTG9uZG9uIgoNYcICvhWHB05C&z=10.82"
-                  width="777" height="806" frameborder="0" allowfullscreen="true" style="position: relative" title="location"></iframe>
+                  width="777" height="806" frameborder="0" allowfullscreen="true" style="position: relative"
+                  title="location"></iframe>
                 <!-- <ymaps
                     class="ymaps-2-1-79-map"
                     style="width: 778px; height: 806px"
@@ -929,6 +950,24 @@
                 </p>
               </div>
               <a class="plan__desc-btn" href="#!">Выбрать апартаменты</a>
+            </div>
+          </div>
+
+          <div class="select__filter">
+            <div class="select__filter-inputs">
+              <div class="select__form">
+                <h5>Корпус</h5>
+                <div class="select__box">
+                  <span class="selected__text">Любой</span>
+                  <img src="images/icons/arrow__down.svg" alt="arrow__down" width="9" height="6">
+                  <div class="select__option-boxes">
+                    <div class="option__box">Любой</div>
+                    <div class="option__box">Club</div>
+                    <div class="option__box">Life</div>
+                    <div class="option__box">Residence</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
