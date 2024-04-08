@@ -75,6 +75,14 @@ window.addEventListener("DOMContentLoaded", () => {
       nextEl: ".swiper-next-btn",
       prevEl: ".swiper-prev-btn",
     },
+    breakpoints: {
+      1015: {
+        slidesPerView: 3,
+      },
+      0: {
+        slidesPerView: 1,
+      },
+    },
   });
 
   // numbers__swiper-two
@@ -86,6 +94,14 @@ window.addEventListener("DOMContentLoaded", () => {
     navigation: {
       nextEl: ".swiper-next-btn",
       prevEl: ".swiper-prev-btn",
+    },
+    breakpoints: {
+      1100: {
+        slidesPerView: 2,
+      },
+      0: {
+        slidesPerView: 1,
+      },
     },
   });
 
@@ -101,6 +117,15 @@ window.addEventListener("DOMContentLoaded", () => {
       nextEl: ".swiper-next-btn-two",
       prevEl: ".swiper-prev-btn-two",
     },
+    breakpoints: {
+      1100: {
+        spaceBetween: 40,
+        slidesPerView: 1.3,
+      },
+      0: {
+        spaceBetween: 18,
+      },
+    },
   });
 
   // architecture__swiper
@@ -115,6 +140,16 @@ window.addEventListener("DOMContentLoaded", () => {
       nextEl: ".swiper-next-btn-3",
       prevEl: ".swiper-prev-btn-3",
     },
+    breakpoints: {
+      1100: {
+        slidesPerView: 1.2,
+        spaceBetween: 140,
+      },
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 60,
+      },
+    },
   });
 
   var architectureSwiperTwo = new Swiper(".architecture__swiper-two", {
@@ -127,6 +162,16 @@ window.addEventListener("DOMContentLoaded", () => {
     navigation: {
       nextEl: ".swiper-next-btn-3",
       prevEl: ".swiper-prev-btn-3",
+    },
+    breakpoints: {
+      1100: {
+        slidesPerView: 1.2,
+        spaceBetween: 140,
+      },
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 60,
+      },
     },
   });
 
