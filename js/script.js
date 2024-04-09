@@ -291,6 +291,12 @@ window.addEventListener("DOMContentLoaded", () => {
     function show(value, text) {
       text.textContent = value;
     }
+
+    selectBox.addEventListener("click", () => {
+      selectOption.classList.toggle("active");
+      selectBox.classList.toggle("active");
+    });
+
     optionValue.forEach((item) => {
       item.addEventListener("click", () => {
         optionValue.forEach((item) => {
@@ -303,3 +309,19 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+AOS.init();
+// window.addEventListener("scroll", function () {
+//   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//   var nav = document.querySelector(".premium__aparment-box");
+//   var navDiv = document.querySelector("nav div");
+
+//   if (scrollTop >= 300) {
+//     // nav.classList.add("fixed-header");
+//     nav.style.position = 'absolute'
+//     navDiv.classList.add("visible-title");
+//   } else {
+//     nav.classList.remove("fixed-header");
+//     navDiv.classList.remove("visible-title");
+//   }
+// });

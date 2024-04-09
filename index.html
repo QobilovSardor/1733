@@ -18,6 +18,8 @@
   <!-- <link rel="stylesheet" href="libs/lightgallery/light-gallery.min.css"> -->
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" /> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="libs/aos/aos.min.css">
   <!-- normalize css -->
   <link rel="stylesheet" href="./libs/normalize.css" />
   <!-- custom css -->
@@ -72,13 +74,13 @@
             frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay"
             muted="muted" title="intro bg video"></iframe> -->
           <div class="video-container">
-            <video
+            <!-- <video
               src="https://storage.coverr.co/videos/GK300Fvvg4T1LYiC9SJpUAK36CDldcR7A?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6Ijg3NjdFMzIzRjlGQzEzN0E4QTAyIiwiaWF0IjoxNjE0NzE0NjcxfQ.EnOnRFM1w-1SJY_AfEhhjR6S_dPgXx0lj1kKMvZheTk"
-              autoplay loop muted></video>
-            <!-- <iframe id="vimeo"
+              autoplay loop muted></video> -->
+            <iframe id="vimeo"
               src="https://player.vimeo.com/video/880527324?autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;background=1"
               frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay"
-              muted="muted" title="intro bg video"></iframe> -->
+              muted="muted" title="intro bg video"></iframe>
           </div>
         </div>
         <!-- header -->
@@ -105,10 +107,10 @@
           </header>
 
           <div itemscope itemtype="http://schema.org/LocalBusiness" class="intro__info-box">
-            <h1 itemprop="name" class="title">Новая</h1>
-            <h1 itemprop="name" class="title">легенда</h1>
-            <h1 itemprop="name" class="title">Петровского</h1>
-            <h1 itemprop="name" class="title">острова</h1>
+            <h1 itemprop="name" class="title" data-aos="fade-up" data-aos-duration="500">Новая</h1>
+            <h1 itemprop="name" class="title" data-aos="fade-up" data-aos-duration="600">легенда</h1>
+            <h1 itemprop="name" class="title" data-aos="fade-up" data-aos-duration="700">Петровского</h1>
+            <h1 itemprop="name" class="title" data-aos="fade-up" data-aos-duration="800">острова</h1>
             <p itemprop="description" class="intro__description">
               Новый исключительный проект от Element Development и яркая
               премьера в одной из самых престижных локаций Петербурга —
@@ -952,11 +954,26 @@
               <a class="plan__desc-btn" href="#!">Выбрать апартаменты</a>
             </div>
           </div>
+        </div>
 
+        <div itemscope class="container">
           <div class="select__filter">
             <div class="select__filter-inputs">
               <div class="select__form">
-                <h5>Корпус</h5>
+                <h5 itemprop="name">Корпус</h5>
+                <div itemscope class="select__box">
+                  <span itemprop="name" class="selected__text">Любой</span>
+                  <img src="images/icons/arrow__down.svg" alt="arrow__down" width="9" height="6">
+                  <div itemscope class="select__option-boxes">
+                    <div itemprop="name" class="option__box">Любой</div>
+                    <div itemprop="name" class="option__box">Club</div>
+                    <div itemprop="name" class="option__box">Life</div>
+                    <div itemprop="name" class="option__box">Residence</div>
+                  </div>
+                </div>
+              </div>
+              <div itemscope itemprop="area" class="select__form">
+                <h5 itemprop="name">Площадь, м²</h5>
                 <div class="select__box">
                   <span class="selected__text">Любой</span>
                   <img src="images/icons/arrow__down.svg" alt="arrow__down" width="9" height="6">
@@ -968,7 +985,169 @@
                   </div>
                 </div>
               </div>
+              <div class="filter__container">
+                <div class="select__form">
+                  <h5>Этаж</h5>
+                  <div class="select__box">
+                    <span class="selected__text">Любой</span>
+                    <img src="images/icons/arrow__down.svg" alt="arrow__down" width="9" height="6">
+                    <div class="select__option-boxes">
+                      <div class="option__box">Любой</div>
+                      <div class="option__box">Club</div>
+                      <div class="option__box">Life</div>
+                      <div class="option__box">Residence</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="filter__top">
+              <p>Найдено 31 апартаментов(а)</p>
+              <button class="clear__filter" aria-label="Очистить параметры поиска">
+                <img src="images/icons/close.svg" alt="clear filter">
+                <span>Очистить параметры поиска</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="filter__table">
+          <div class="filter__table-header">
+            <div class="header__content">
+              <div>
+                <p>Планировка</p>
+                <img src="images/iconFilter.png" alt="filter icon" width="13" height="12">
+              </div>
+              <div>
+                <p>Комплекс</p>
+                <img src="images/iconFilter.png" alt="filter icon" width="13" height="12">
+              </div>
+              <div>
+                <p class="media__none">Площадь, м²</p><p class="media__block">id</p>
+                <img src="images/iconFilter.png" alt="filter icon" width="13" height="12">
+              </div>
+              <div>
+                <p>Этаж</p>
+                <img src="images/iconFilter.png" alt="filter icon" width="13" height="12">
+              </div>
+              <div>
+                <p>Комнаты</p>
+                <img src="images/iconFilter.png" alt="filter icon" width="13" height="12">
+              </div>
+              <div>
+                <p>Стоимость, руб.</p>
+                <img src="images/iconFilter.png" alt="filter icon" width="13" height="12">
+              </div>
+            </div>
+          </div>
+
+          <div class="filter__table-tr">
+            <div class="img__box">
+              <img src="images/RESIDENCE.png" alt="residence" width="80" height="80">
+            </div>
+            <div class="content__box">
+              <div class="content__box-header">
+                <div class="top">
+                  <p>residence</p>
+                  <span>218,28 м²</span>
+                  <span>3 этаж</span>
+                  <span>3</span><span>137 767 090 руб.</span>
+                </div>
+              </div>
+              <p>Апартаменты #779</p>
+              <p>Всего 8 этажа(ей) в комплексе</p>
+            </div>
+          </div>
+          <div class="filter__table-tr">
+            <div class="img__box">
+              <img src="images/RESIDENCE.png" alt="residence" width="80" height="80">
+            </div>
+            <div class="content__box">
+              <div class="content__box-header">
+                <div class="top">
+                  <p>residence</p>
+                  <span>218,28 м²</span>
+                  <span>3 этаж</span>
+                  <span>3</span><span>137 767 090 руб.</span>
+                </div>
+              </div>
+              <p>Апартаменты #779</p>
+              <p>Всего 8 этажа(ей) в комплексе</p>
+            </div>
+          </div>
+          <div class="filter__table-tr">
+            <div class="img__box">
+              <img src="images/RESIDENCE.png" alt="residence" width="80" height="80">
+            </div>
+            <div class="content__box">
+              <div class="content__box-header">
+                <div class="top">
+                  <p>residence</p>
+                  <span>218,28 м²</span>
+                  <span>3 этаж</span>
+                  <span>3</span><span>137 767 090 руб.</span>
+                </div>
+              </div>
+              <p>Апартаменты #779</p>
+              <p>Всего 8 этажа(ей) в комплексе</p>
+            </div>
+          </div>
+          <div class="filter__table-tr">
+            <div class="img__box">
+              <img src="images/RESIDENCE.png" alt="residence" width="80" height="80">
+            </div>
+            <div class="content__box">
+              <div class="content__box-header">
+                <div class="top">
+                  <p>residence</p>
+                  <span>218,28 м²</span>
+                  <span>3 этаж</span>
+                  <span>3</span><span>137 767 090 руб.</span>
+                </div>
+              </div>
+              <p>Апартаменты #779</p>
+              <p>Всего 8 этажа(ей) в комплексе</p>
+            </div>
+          </div>
+          <div class="filter__table-tr">
+            <div class="img__box">
+              <img src="images/RESIDENCE.png" alt="residence" width="80" height="80">
+            </div>
+            <div class="content__box">
+              <div class="content__box-header">
+                <div class="top">
+                  <p>residence</p>
+                  <span>218,28 м²</span>
+                  <span>3 этаж</span>
+                  <span>3</span><span>137 767 090 руб.</span>
+                </div>
+              </div>
+              <p>Апартаменты #779</p>
+              <p>Всего 8 этажа(ей) в комплексе</p>
+            </div>
+          </div>
+          <div class="filter__table-tr">
+            <div class="img__box">
+              <img src="images/RESIDENCE.png" alt="residence" width="80" height="80">
+            </div>
+            <div class="content__box">
+              <div class="content__box-header">
+                <div class="top">
+                  <p>residence</p>
+                  <span>218,28 м²</span>
+                  <span>3 этаж</span>
+                  <span>3</span><span>137 767 090 руб.</span>
+                </div>
+              </div>
+              <p>Апартаменты #779</p>
+              <p>Всего 8 этажа(ей) в комплексе</p>
+            </div>
+          </div>
+
+          <div class="btn__content">
+            <button class="read__more" aria-label="Показать еще">
+              <div class="logo">+</div>
+              <span>Показать еще</span>
+            </button>
           </div>
         </div>
       </section>
@@ -1545,10 +1724,46 @@
         </div>
 
         <div itemprop="target" class="multi__select-boxes">
-          <div class="form__input multi__select"></div>
-          <div class="form__input multi__select"></div>
-          <div class="form__input multi__select"></div>
-          <div class="form__input multi__select"></div>
+          <div class="select__filter-inputs">
+            <div class="select__form">
+              <div itemscope="" class="select__box">
+                <span itemprop="name" class="selected__text">Любой</span>
+                <img src="images/icons/arrow__down.svg" alt="arrow__down" width="9" height="6">
+                <div itemscope="" class="select__option-boxes">
+                  <div itemprop="name" class="option__box">Любой</div>
+                  <div itemprop="name" class="option__box">Club</div>
+                  <div itemprop="name" class="option__box">Life</div>
+                  <div itemprop="name" class="option__box">Residence</div>
+                </div>
+              </div>
+            </div>
+            <div itemscope="" itemprop="area" class="select__form">
+              <div class="select__box">
+                <span class="selected__text">Любой</span>
+                <img src="images/icons/arrow__down.svg" alt="arrow__down" width="9" height="6">
+                <div class="select__option-boxes">
+                  <div class="option__box">Любой</div>
+                  <div class="option__box">Club</div>
+                  <div class="option__box">Life</div>
+                  <div class="option__box">Residence</div>
+                </div>
+              </div>
+            </div>
+            <div class="filter__container">
+              <div class="select__form">
+                <div class="select__box">
+                  <span class="selected__text">Любой</span>
+                  <img src="images/icons/arrow__down.svg" alt="arrow__down" width="9" height="6">
+                  <div class="select__option-boxes">
+                    <div class="option__box">Любой</div>
+                    <div class="option__box">Club</div>
+                    <div class="option__box">Life</div>
+                    <div class="option__box">Residence</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <button type="submit" class="send__btn">Отправить</button>
@@ -1564,6 +1779,8 @@
   <!-- <script src="libs/lightgallery/lightgallery.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
   <script src="./libs/swiper/swiper.min.js"></script>
+  <!-- aos -->
+  <script src="libs/aos/aos.min.js"></script>
   <!-- custom js -->
   <script src="./js/script.js"></script>
 </body>
