@@ -12,9 +12,13 @@
   transform: scaleY(0);
   transition: all 0.5s ease;
   transform-origin: bottom;
-.select__filter-inputs .select__option-boxes {
-  background: #fff;
-}
+  .select__filter-inputs .select__option-boxes {
+    background: #fff;
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
   &.active {
     transform: scaleY(1);
   }

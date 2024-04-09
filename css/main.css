@@ -119,6 +119,10 @@ body.overflow-hidden {
 }
 .leave__request .select__filter-inputs .select__option-boxes {
   background: #fff;
+  display: none;
+}
+.leave__request .select__filter-inputs .select__option-boxes.active {
+  display: block;
 }
 .leave__request.active {
   transform: scaleY(1);
