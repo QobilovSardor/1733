@@ -41,15 +41,15 @@
           <img itemprop="logo" class="link__logo" src="images/link-logo.webp" alt="17/33 image" width="130"
             height="130" />
           <div class="menu__link-btns" itemscope>
-            <a class="menu__link-btn" itemprop="url" href="#!">Магия чисел</a>
-            <a class="menu__link-btn" itemprop="url" href="#!">Исключительная локация</a>
-            <a class="menu__link-btn" itemprop="url" href="#!">Торждество архитектурной мысли</a>
-            <a class="menu__link-btn" itemprop="url" href="#!">Три пространства</a>
-            <a class="menu__link-btn" itemprop="url" href="#!">Элегантность в деталях</a>
-            <a class="menu__link-btn" itemprop="url" href="#!">Партнеры</a>
-            <a class="menu__link-btn" itemprop="url" href="#!">Галерея</a>
-            <a class="menu__link-btn" itemprop="url" href="#!">Динамика строительства</a>
-            <a class="menu__link-btn" itemprop="url" href="#!">Контакты</a>
+            <a class="menu__link-btn" itemprop="url" href="#magi">Магия чисел</a>
+            <a class="menu__link-btn" itemprop="url" href="#location">Исключительная локация</a>
+            <a class="menu__link-btn" itemprop="url" href="#architecture">Торждество архитектурной мысли</a>
+            <a class="menu__link-btn" itemprop="url" href="#architecture-two">Три пространства</a>
+            <a class="menu__link-btn" itemprop="url" href="#architecture-three">Элегантность в деталях</a>
+            <a class="menu__link-btn" itemprop="url" href="#prtners">Партнеры</a>
+            <a class="menu__link-btn" itemprop="url" href="#gallery">Галерея</a>
+            <a class="menu__link-btn" itemprop="url" href="#architecture-four">Динамика строительства</a>
+            <a class="menu__link-btn" itemprop="url" href="#contact">Контакты</a>
           </div>
           <a itemprop="url" class="menu__btn" aria-label="Выбрать апартаменты" href="#!">
             Выбрать апартаменты
@@ -129,7 +129,7 @@
       </section>
 
       <!-- numbers -->
-      <section class="numbers" itemscope itemtype="http://schema.org/ItemList">
+      <section class="numbers" itemscope itemtype="http://schema.org/ItemList" id="magi">
         <div class="container" itemprop="mainEntity" itemscope itemtype="http://schema.org/ListItem">
           <h1 itemprop="name" class="title">
             Магия <br />
@@ -177,7 +177,7 @@
       </section>
 
       <!-- location -->
-      <section class="location" itemscope itemtype="http://schema.org/Place">
+      <section class="location" itemscope itemtype="http://schema.org/Place" id="location">
         <div class="container">
           <div itemprop="name" class="badge">Расположение</div>
           <div itemprop="name" class="location__sidebars">
@@ -476,10 +476,10 @@
       </section>
 
       <!-- architecture -->
-      <section class="architecture" itemscope itemtype="http://schema.org/Place">
+      <section class="architecture" itemscope itemtype="http://schema.org/Place" id="architecture">
         <div class="container">
           <h1 class="title">
-            ТОРЖЕСТВО <br />
+            ТОРЖЕСТВО<br />
             АРХИТЕКТУРНОЙ <br />
             МЫСЛИ
           </h1>
@@ -575,7 +575,7 @@
       </section>
 
       <!-- architecture -->
-      <section class="architecture" itemscope itemtype="http://schema.org/Place">
+      <section class="architecture" itemscope itemtype="http://schema.org/Place" id="architecture-two">
         <div class="container">
           <h1 itemprop="name" class="title">
             ТРИ ПРОСТРАНСТВА <br />
@@ -959,47 +959,21 @@
         <div itemscope class="container">
           <div class="select__filter">
             <div class="select__filter-inputs">
-              <div class="select__form">
-                <h5 itemprop="name">Корпус</h5>
-                <div itemscope class="select__box">
-                  <span itemprop="name" class="selected__text">Любой</span>
-                  <img src="images/icons/arrow__down.svg" alt="arrow__down" width="9" height="6">
-                  <div itemscope class="select__option-boxes">
-                    <div itemprop="name" class="option__box">Любой</div>
-                    <div itemprop="name" class="option__box">Club</div>
-                    <div itemprop="name" class="option__box">Life</div>
-                    <div itemprop="name" class="option__box">Residence</div>
-                  </div>
-                </div>
-              </div>
-              <div itemscope itemprop="area" class="select__form">
-                <h5 itemprop="name">Площадь, м²</h5>
-                <div class="select__box">
-                  <span class="selected__text">Любой</span>
-                  <img src="images/icons/arrow__down.svg" alt="arrow__down" width="9" height="6">
-                  <div class="select__option-boxes">
-                    <div class="option__box">Любой</div>
-                    <div class="option__box">Club</div>
-                    <div class="option__box">Life</div>
-                    <div class="option__box">Residence</div>
-                  </div>
-                </div>
-              </div>
-              <div class="filter__container">
-                <div class="select__form">
-                  <h5>Этаж</h5>
-                  <div class="select__box">
-                    <span class="selected__text">Любой</span>
-                    <img src="images/icons/arrow__down.svg" alt="arrow__down" width="9" height="6">
-                    <div class="select__option-boxes">
-                      <div class="option__box">Любой</div>
-                      <div class="option__box">Club</div>
-                      <div class="option__box">Life</div>
-                      <div class="option__box">Residence</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <button class="select__box">
+                1к квартирь
+              </button>
+              <button class="select__box">
+                2к квартирь
+              </button>
+              <button class="select__box">
+                3к квартирь
+              </button>
+              <button class="select__box">
+                4к квартирь
+              </button>
+              <button class="select__box">
+                5к квартирь
+              </button>
             </div>
             <div class="filter__top">
               <p>Найдено 31 апартаментов(а)</p>
@@ -1022,7 +996,8 @@
                 <img src="images/iconFilter.png" alt="filter icon" width="13" height="12">
               </div>
               <div>
-                <p class="media__none">Площадь, м²</p><p class="media__block">id</p>
+                <p class="media__none">Площадь, м²</p>
+                <p class="media__block">id</p>
                 <img src="images/iconFilter.png" alt="filter icon" width="13" height="12">
               </div>
               <div>
@@ -1034,13 +1009,14 @@
                 <img src="images/iconFilter.png" alt="filter icon" width="13" height="12">
               </div>
               <div>
-                <p class="media__none">Стоимость, руб.</p><p class="media__block">Цена</p>
+                <p class="media__none">Стоимость, руб.</p>
+                <p class="media__block">Цена</p>
                 <img src="images/iconFilter.png" alt="filter icon" width="13" height="12">
               </div>
             </div>
           </div>
 
-          <div class="filter__table-tr">
+          <div class="filter__table-tr" data-type="modal__content-1">
             <div class="img__box">
               <img src="images/RESIDENCE.png" alt="residence" width="80" height="80">
             </div>
@@ -1057,7 +1033,7 @@
               <p>Всего 8 этажа(ей) в комплексе</p>
             </div>
           </div>
-          <div class="filter__table-tr">
+          <div class="filter__table-tr" data-type="modal__content-2">
             <div class="img__box">
               <img src="images/RESIDENCE.png" alt="residence" width="80" height="80">
             </div>
@@ -1074,7 +1050,7 @@
               <p>Всего 8 этажа(ей) в комплексе</p>
             </div>
           </div>
-          <div class="filter__table-tr">
+          <div class="filter__table-tr" data-type="modal__content-3">
             <div class="img__box">
               <img src="images/RESIDENCE.png" alt="residence" width="80" height="80">
             </div>
@@ -1091,7 +1067,7 @@
               <p>Всего 8 этажа(ей) в комплексе</p>
             </div>
           </div>
-          <div class="filter__table-tr">
+          <div class="filter__table-tr" data-type="modal__content-4">
             <div class="img__box">
               <img src="images/RESIDENCE.png" alt="residence" width="80" height="80">
             </div>
@@ -1108,24 +1084,7 @@
               <p>Всего 8 этажа(ей) в комплексе</p>
             </div>
           </div>
-          <div class="filter__table-tr">
-            <div class="img__box">
-              <img src="images/RESIDENCE.png" alt="residence" width="80" height="80">
-            </div>
-            <div class="content__box">
-              <div class="content__box-header">
-                <div class="top">
-                  <p>residence</p>
-                  <span>218,28 м²</span>
-                  <span>3 этаж</span>
-                  <span>3</span><span>137 767 090 руб.</span>
-                </div>
-              </div>
-              <p>Апартаменты #779</p>
-              <p>Всего 8 этажа(ей) в комплексе</p>
-            </div>
-          </div>
-          <div class="filter__table-tr">
+          <div class="filter__table-tr" data-type="modal__content-5">
             <div class="img__box">
               <img src="images/RESIDENCE.png" alt="residence" width="80" height="80">
             </div>
@@ -1153,7 +1112,7 @@
       </section>
 
       <!-- architecture -->
-      <section class="architecture" itemscope itemtype="http://schema.org/Place">
+      <section class="architecture" itemscope itemtype="http://schema.org/Place" id="architecture-three">
         <div class="swiper-container architecture__swiper">
           <div class="swiper-wrapper" itemprop="hasPart">
             <div class="swiper-slide" itemscope itemtype="http://schema.org/CreativeWork">
@@ -1279,7 +1238,7 @@
       </section>
 
       <!-- numbers -->
-      <section class="numbers partners" itemscope itemtype="http://schema.org/ItemList">
+      <section class="numbers partners" itemscope itemtype="http://schema.org/ItemList" id="prtners">
         <div class="container" itemprop="mainEntity" itemscope itemtype="http://schema.org/ListItem">
           <h1 itemprop="name" class="title">
             Наши <br />
@@ -1399,7 +1358,7 @@
       </section>
 
       <!-- location slider -->
-      <section class="location">
+      <section class="location" id="gallery">
         <div itemscope class="swiper location__swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -1427,7 +1386,7 @@
       </section>
 
       <!-- construction architecture -->
-      <section class="construction architecture" itemscope itemtype="http://schema.org/Place">
+      <section class="construction architecture" itemscope itemtype="http://schema.org/Place" id="architecture-four">
         <div itemscope class="container">
           <h1 itemprop="name" class="title">
             Динамика <br>
@@ -1645,7 +1604,7 @@
     </main>
 
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div itemscope class="container">
         <div itemprop="location" itemscope itemtype="http://schema.org/Place">
           <p class="footer__location" itemprop="address">Адрес объекта</p>
@@ -1708,36 +1667,50 @@
       </div>
     </footer>
 
-    <div itemscope itemtype="http://schema.org/LocalBusiness" class="leave__request">
-      <div itemscope class="leave__request-header">
-        <h3 class="leave__request-title">
-          Оставьте заявку и наш менеджер свяжется с Вами в ближайшее время
-        </h3>
-        <button class="close__contact-btn" aria-label="close contact btn">
-          <img src="images/icons/close.svg" alt="close icon" width="20" height="20" />
-        </button>
+  </div>
+  <div itemscope itemtype="http://schema.org/LocalBusiness" class="leave__request">
+    <div itemscope class="leave__request-header">
+      <h3 class="leave__request-title">
+        Оставьте заявку и наш менеджер свяжется с Вами в ближайшее время
+      </h3>
+      <button class="close__contact-btn" aria-label="close contact btn">
+        <img src="images/icons/close.svg" alt="close icon" width="20" height="20" />
+      </button>
+    </div>
+    <form itemprop="potentialAction" itemscope itemtype="http://schema.org/CommunicateAction" class="form">
+      <div class="form__input-box">
+        <input itemprop="agent" type="text" name="name" placeholder="Ваше имя" class="form__input" />
+        <input itemprop="recipient" type="tel" name="telephone" placeholder="Телефон" class="form__input" />
       </div>
-      <form itemprop="potentialAction" itemscope itemtype="http://schema.org/CommunicateAction" class="form">
-        <div class="form__input-box">
-          <input itemprop="agent" type="text" name="name" placeholder="Ваше имя" class="form__input" />
-          <input itemprop="recipient" type="tel" name="telephone" placeholder="Телефон" class="form__input" />
-        </div>
 
-        <div itemprop="target" class="multi__select-boxes">
-          <div class="select__filter-inputs">
-            <div class="select__form">
-              <div itemscope="" class="select__box">
-                <span itemprop="name" class="selected__text">Любой</span>
-                <img src="images/icons/arrow__down.svg" alt="arrow__down" width="9" height="6">
-                <div itemscope="" class="select__option-boxes">
-                  <div itemprop="name" class="option__box">Любой</div>
-                  <div itemprop="name" class="option__box">Club</div>
-                  <div itemprop="name" class="option__box">Life</div>
-                  <div itemprop="name" class="option__box">Residence</div>
-                </div>
+      <div itemprop="target" class="multi__select-boxes">
+        <div class="select__filter-inputs">
+          <div class="select__form">
+            <div itemscope="" class="select__box">
+              <span itemprop="name" class="selected__text">Любой</span>
+              <img src="images/icons/arrow__down.svg" alt="arrow__down" width="9" height="6">
+              <div itemscope="" class="select__option-boxes">
+                <div itemprop="name" class="option__box">Любой</div>
+                <div itemprop="name" class="option__box">Club</div>
+                <div itemprop="name" class="option__box">Life</div>
+                <div itemprop="name" class="option__box">Residence</div>
               </div>
             </div>
-            <div itemscope="" itemprop="area" class="select__form">
+          </div>
+          <div itemscope="" itemprop="area" class="select__form">
+            <div class="select__box">
+              <span class="selected__text">Любой</span>
+              <img src="images/icons/arrow__down.svg" alt="arrow__down" width="9" height="6">
+              <div class="select__option-boxes">
+                <div class="option__box">Любой</div>
+                <div class="option__box">Club</div>
+                <div class="option__box">Life</div>
+                <div class="option__box">Residence</div>
+              </div>
+            </div>
+          </div>
+          <div class="filter__container">
+            <div class="select__form">
               <div class="select__box">
                 <span class="selected__text">Любой</span>
                 <img src="images/icons/arrow__down.svg" alt="arrow__down" width="9" height="6">
@@ -1749,31 +1722,316 @@
                 </div>
               </div>
             </div>
-            <div class="filter__container">
-              <div class="select__form">
-                <div class="select__box">
-                  <span class="selected__text">Любой</span>
-                  <img src="images/icons/arrow__down.svg" alt="arrow__down" width="9" height="6">
-                  <div class="select__option-boxes">
-                    <div class="option__box">Любой</div>
-                    <div class="option__box">Club</div>
-                    <div class="option__box">Life</div>
-                    <div class="option__box">Residence</div>
-                  </div>
-                </div>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="send__btn">Отправить</button>
+      <p class="privacy__policy-agreement">
+        Нажимая кнопку «Отправить», я соглашаюсь <br />
+        с условиями обработки персональных данных.
+      </p>
+    </form>
+  </div>
+
+  <div itemscope itemtype="http://schema.org/LocalBusiness" class="leave__request-two">
+    <div itemscope class="leave__request-header">
+      <h3 class="leave__request-title">
+        Оставьте заявку и наш менеджер свяжется с Вами в ближайшее время
+      </h3>
+      <button class=" close-btn" aria-label="close contact btn">
+        <img src="images/icons/close.svg" alt="close icon" width="20" height="20" />
+      </button>
+    </div>
+    <form itemprop="potentialAction" itemscope itemtype="http://schema.org/CommunicateAction" class="form">
+      <div class="form__input-box">
+        <input itemprop="agent" type="text" name="name" placeholder="Ваше имя" class="form__input" />
+        <input itemprop="recipient" type="tel" name="telephone" placeholder="Телефон" class="form__input" />
+      </div>
+  
+      <button type="submit" class="send__btn">Отправить</button>
+      <p class="privacy__policy-agreement">
+        Нажимая кнопку «Отправить», я соглашаюсь <br />
+        с условиями обработки персональных данных.
+      </p>
+    </form>
+  </div>
+
+  <!-- modals -->
+  <div class="mdoal" data-type="modal__content-1">
+    <div class="content modal-content">
+      <button class="back__btn">
+        <div class="back__btn-img">
+          <img src="images/icons/back.svg" alt="back img" width="6" height="11">
+        </div>
+        <span>Назад</span>
+      </button>
+
+      <div class="modal__content">
+        <div class="modal__content-info">
+          <div class="media__flex">
+            <div>
+              <h1>711</h1>
+              <p>Номер апартаментов</p>
+            </div>
+            <div class="content__info">
+              <div>
+                <h3>65.99</h3>
+                <p>Площадь, м²</p>
+              </div>
+              <div>
+                <h3>3</h3>
+                <p>Этаж</p>
+              </div>
+              <div>
+                <h3>2</h3>
+                <p>Комнат</p>
+              </div>
+            </div>
+            <div class="content__info">
+              <div>
+                <h3>LIFE</h3>
+                <p>Секция</p>
+              </div>
+              <div>
+                <h3>41 092 633 руб.</h3>
+                <p>Цена</p>
               </div>
             </div>
           </div>
+          <button itemprop="action" class="outline__btn open-contact-btn" aria-label="Оставить запрос" >
+            Оставить запрос
+          </button>
         </div>
-
-        <button type="submit" class="send__btn">Отправить</button>
-        <p class="privacy__policy-agreement">
-          Нажимая кнопку «Отправить», я соглашаюсь <br />
-          с условиями обработки персональных данных.
-        </p>
-      </form>
+        <div class="modal__img">
+          <img src="images/construction-images/301.png" alt="constructioin">
+        </div>
+        <div class="mini__life">
+          <img src="images/construction-images/mini-life.png" alt="mini-life">
+        </div>
+      </div>
     </div>
   </div>
+  <div class="mdoal" data-type="modal__content-2">
+    <div class="content modal-content">
+      <button class="back__btn">
+        <div class="back__btn-img">
+          <img src="images/icons/back.svg" alt="back img" width="6" height="11">
+        </div>
+        <span>Назад</span>
+      </button>
+  
+      <div class="modal__content">
+        <div class="modal__content-info">
+          <div class="media__flex">
+            <div>
+              <h1>498</h1>
+              <p>Номер апартаментов</p>
+            </div>
+            <div class="content__info">
+              <div>
+                <h3>65.99</h3>
+                <p>Площадь, м²</p>
+              </div>
+              <div>
+                <h3>3</h3>
+                <p>Этаж</p>
+              </div>
+              <div>
+                <h3>2</h3>
+                <p>Комнат</p>
+              </div>
+            </div>
+            <div class="content__info">
+              <div>
+                <h3>LIFE</h3>
+                <p>Секция</p>
+              </div>
+              <div>
+                <h3>41 092 633 руб.</h3>
+                <p>Цена</p>
+              </div>
+            </div>
+          </div>
+          <button itemprop="action" class="outline__btn open-contact-btn" aria-label="Оставить запрос">
+            Оставить запрос
+          </button>
+        </div>
+        <div class="modal__img">
+          <img src="images/construction-images/301.png" alt="constructioin">
+        </div>
+        <div class="mini__life">
+          <img src="images/construction-images/mini-life.png" alt="mini-life">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mdoal" data-type="modal__content-3">
+    <div class="content modal-content">
+      <button class="back__btn">
+        <div class="back__btn-img">
+          <img src="images/icons/back.svg" alt="back img" width="6" height="11">
+        </div>
+        <span>Назад</span>
+      </button>
+  
+      <div class="modal__content">
+        <div class="modal__content-info">
+          <div class="media__flex">
+            <div>
+              <h1>457</h1>
+              <p>Номер апартаментов</p>
+            </div>
+            <div class="content__info">
+              <div>
+                <h3>65.99</h3>
+                <p>Площадь, м²</p>
+              </div>
+              <div>
+                <h3>3</h3>
+                <p>Этаж</p>
+              </div>
+              <div>
+                <h3>2</h3>
+                <p>Комнат</p>
+              </div>
+            </div>
+            <div class="content__info">
+              <div>
+                <h3>LIFE</h3>
+                <p>Секция</p>
+              </div>
+              <div>
+                <h3>41 092 633 руб.</h3>
+                <p>Цена</p>
+              </div>
+            </div>
+          </div>
+          <button itemprop="action" class="outline__btn open-contact-btn" aria-label="Оставить запрос" >
+            Оставить запрос
+          </button>
+        </div>
+        <div class="modal__img">
+          <img src="images/construction-images/301.png" alt="constructioin">
+        </div>
+        <div class="mini__life">
+          <img src="images/construction-images/mini-life.png" alt="mini-life">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mdoal" data-type="modal__content-4">
+    <div class="content modal-content">
+      <button class="back__btn">
+        <div class="back__btn-img">
+          <img src="images/icons/back.svg" alt="back img" width="6" height="11">
+        </div>
+        <span>Назад</span>
+      </button>
+  
+      <div class="modal__content">
+        <div class="modal__content-info">
+          <div class="media__flex">
+            <div>
+              <h1>334</h1>
+              <p>Номер апартаментов</p>
+            </div>
+            <div class="content__info">
+              <div>
+                <h3>65.99</h3>
+                <p>Площадь, м²</p>
+              </div>
+              <div>
+                <h3>3</h3>
+                <p>Этаж</p>
+              </div>
+              <div>
+                <h3>2</h3>
+                <p>Комнат</p>
+              </div>
+            </div>
+            <div class="content__info">
+              <div>
+                <h3>LIFE</h3>
+                <p>Секция</p>
+              </div>
+              <div>
+                <h3>41 092 633 руб.</h3>
+                <p>Цена</p>
+              </div>
+            </div>
+          </div>
+          <button itemprop="action" class="outline__btn open-contact-btn" aria-label="Оставить запрос" >
+            Оставить запрос
+          </button>
+        </div>
+        <div class="modal__img">
+          <img src="images/construction-images/301.png" alt="constructioin">
+        </div>
+        <div class="mini__life">
+          <img src="images/construction-images/mini-life.png" alt="mini-life">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mdoal" data-type="modal__content-5">
+    <div class="content modal-content">
+      <button class="back__btn">
+        <div class="back__btn-img">
+          <img src="images/icons/back.svg" alt="back img" width="6" height="11">
+        </div>
+        <span>Назад</span>
+      </button>
+  
+      <div class="modal__content">
+        <div class="modal__content-info">
+          <div class="media__flex">
+            <div>
+              <h1>111</h1>
+              <p>Номер апартаментов</p>
+            </div>
+            <div class="content__info">
+              <div>
+                <h3>65.99</h3>
+                <p>Площадь, м²</p>
+              </div>
+              <div>
+                <h3>3</h3>
+                <p>Этаж</p>
+              </div>
+              <div>
+                <h3>2</h3>
+                <p>Комнат</p>
+              </div>
+            </div>
+            <div class="content__info">
+              <div>
+                <h3>LIFE</h3>
+                <p>Секция</p>
+              </div>
+              <div>
+                <h3>41 092 633 руб.</h3>
+                <p>Цена</p>
+              </div>
+            </div>
+          </div>
+          <button itemprop="action" class="outline__btn open-contact-btn" aria-label="Оставить запрос" >
+            Оставить запрос
+          </button>
+        </div>
+        <div class="modal__img">
+          <img src="images/construction-images/301.png" alt="constructioin">
+        </div>
+        <div class="mini__life">
+          <img src="images/construction-images/mini-life.png" alt="mini-life">
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- light-galery -->
   <!-- <script src="libs/lightgallery/lightgallery.min.js"></script> -->

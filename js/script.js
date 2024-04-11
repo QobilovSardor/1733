@@ -27,8 +27,23 @@ window.addEventListener("DOMContentLoaded", () => {
   const closeContactFormBtn = document.querySelector(".close__contact-btn");
   const contactForm = document.querySelector(".leave__request");
 
+  const modalEl = document.querySelectorAll(".mdoal");
+  const contactFormTwo = document.querySelector(".leave__request-two");
+  const close = document.querySelector(".close-btn");
+
+  modalEl.forEach((item) => {
+    const openContactFormBtnTwo = item.querySelector(".open-contact-btn");
+    openContactFormBtnTwo.addEventListener("click", () => {
+      contactFormTwo.classList.add("active");
+    });
+    close.addEventListener("click", () => {
+      contactFormTwo.classList.remove("active");
+    });
+  });
+
   function showContactForm() {
     contactForm.classList.add("active");
+
     if (contactForm.classList.contains("active")) {
       menu.classList.remove("active");
       menuOverlay.classList.remove("active");
@@ -49,21 +64,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // 9135
   // fixed box
-  const apartmentBox = document.querySelector(".premium__aparment-box");
-
-  window.addEventListener("scroll", () => {
-    const windowHeight = window.innerHeight; // Oyna balandligi
-    const scrollHeight = document.body.scrollHeight; // Dokument balandligi
-    const scrollPosition = window.scrollY || window.pageYOffset; // Scroll hajmi
-    const threshold = 9135; // Ogohlantiruv qiymati
-
-    // Agar scroll o'rnatilgan hajmi threshold ga teng yoki katta bo'lsa
-    // if (scrollPosition >= threshold) {
-    //   apartmentBox.style.position = "absolute";
-    // } else {
-    //   apartmentBox.style.position = "fixed"; // Agar qaytadan scroll pastga o'tkazilgan bo'lsa, positionni olib tashlash
-    // }
-  });
 
   // numbers__swiper
   var numbersSwiper = new Swiper(".numbers__swiper", {
@@ -311,17 +311,33 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 AOS.init();
-// window.addEventListener("scroll", function () {
-//   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-//   var nav = document.querySelector(".premium__aparment-box");
-//   var navDiv = document.querySelector("nav div");
 
-//   if (scrollTop >= 300) {
-//     // nav.classList.add("fixed-header");
-//     nav.style.position = 'absolute'
-//     navDiv.classList.add("visible-title");
-//   } else {
-//     nav.classList.remove("fixed-header");
-//     navDiv.classList.remove("visible-title");
-//   }
-// });
+// modal
+const modals = document.querySelectorAll(".mdoal");
+const filterTrs = document.querySelectorAll(".filter__table-tr");
+filterTrs.forEach((tr) => {
+  tr.addEventListener("click", () => {
+    const clickedType = tr.getAttribute("data-type");
+    modals.forEach((modal) => {
+      const backBtn = modal.querySelector(".back__btn");
+      const modalType = modal.getAttribute("data-type");
+      backBtn.addEventListener("click", () => {
+        modal.classList.remove("active");
+        document.body.style.overflow = "auto";
+        document
+          .querySelector(".leave__request-two")
+          .classList.remove("active");
+      });
+
+      if (clickedType === modalType) {
+        modal.classList.add("active");
+        document.body.style.overflow = "hidden";
+      } else if (modal.classList.contains("active")) {
+        document.body.style.overflow = "hidden";
+      } else {
+        modal.classList.remove("active");
+        document.body.style.overflow = "auto";
+      }
+    });
+  });
+});

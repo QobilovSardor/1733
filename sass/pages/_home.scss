@@ -547,11 +547,12 @@
     }
     .select__box {
       position: relative;
-      width: 290px;
+      width: 190px;
+      text-align: center;
       height: 51px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       font-size: 14.77px;
       font-weight: 400;
       line-height: 21px;
@@ -706,6 +707,7 @@
       display: flex;
       align-items: center;
       gap: 13px;
+      margin-left: 250px;
     }
   }
 }
@@ -873,7 +875,11 @@
 .filter__table .btn__content {
   margin-left: 30px;
 }
-
+@media screen and (max-width: 1200px) {
+  .filter__table .btn__content .read__more {
+    margin-left: 0;
+  }
+}
 @media screen and (max-width: 1100px) {
   .filter__table .filter__table-tr {
     padding-left: 0;
@@ -1354,7 +1360,7 @@
   }
   .header__call.media__block {
     align-items: center;
-    display: flex !important; 
+    display: flex !important;
   }
 }
 @media screen and (max-width: 480px) {
