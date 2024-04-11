@@ -466,46 +466,11 @@ body.overflow-hidden {
   overflow: hidden;
   height: 96vh;
   transition: all 2s ease;
+  background: url(../../images/hero-bg.webp) no-repeat;
+  background-size: cover;
 }
 .intro .container {
   width: 90%;
-}
-.intro .video-container {
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 90vh;
-  width: 100vw;
-  border-radius: 0px 0px 65px 65px;
-  overflow: hidden;
-}
-.intro .video-container iframe,
-.intro .video-container video {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transform: scale(2);
-  border-radius: 0px 0px 65px 65px;
-}
-.intro .video-container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 0px 0px 65px 65px;
-}
-.intro__video-bg video,
-.intro__video-bg iframe {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 .intro .menu {
   position: fixed;
@@ -934,6 +899,21 @@ body.overflow-hidden {
 
 .choose__apartments .container .select__filter .select__filter-inputs .select__box {
   justify-content: center;
+}
+.choose__apartments .filter__tab-content {
+  display: none;
+  animation: foo 0.3s linear;
+}
+.choose__apartments .filter__tab-content.active {
+  display: block;
+}
+@keyframes foo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .select__filter {

@@ -341,3 +341,28 @@ filterTrs.forEach((tr) => {
     });
   });
 });
+
+// tabcontet
+const selectBtn = document.querySelectorAll(".select__box-btn");
+const filterTabContent = document.querySelectorAll(".filter__tab-content");
+const clearFilter = document.querySelector(".clear__filter");
+function showTab(idx = 0) {
+  filterTabContent[idx].classList.add("active");
+}
+function hideTab() {
+  filterTabContent.forEach((item) => {
+    item.classList.remove("active");
+  });
+}
+showTab();
+
+selectBtn.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    hideTab();
+    showTab(index);
+  });
+});
+clearFilter.addEventListener("click", () => {
+  hideTab();
+  showTab(0);
+});
