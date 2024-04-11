@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", () => {
+// window.addEventListener("DOMContentLoaded", () => {
   // menu
   const openMenuBtn = document.querySelector(".open__menu-btn");
   const closeMenuBtn = document.querySelector(".menu__close-btn");
@@ -308,7 +308,7 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
-});
+// });
 
 AOS.init();
 

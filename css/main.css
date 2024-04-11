@@ -669,11 +669,12 @@ body.overflow-hidden {
   max-width: 777px;
   height: 42vw;
   border-radius: 60px;
-  overflow: hidden;
 }
 .location .map__box iframe {
   width: 100%;
   height: 100%;
+  border: none;
+  border-radius: inherit;
 }
 .location__description {
   max-width: 42%;
@@ -1652,6 +1653,9 @@ body.overflow-hidden {
   .location {
     margin-top: 35px;
   }
+  .intro {
+    border-radius: 0 0 40px 40px;
+  }
   .numbers__swiper,
   .numbers__swiper-two {
     margin: 0;
@@ -1699,15 +1703,6 @@ body.overflow-hidden {
   }
 }
 @media screen and (max-width: 576px) {
-  .intro .video-container iframe,
-  .intro .video-container video {
-    height: 100%;
-    width: 100vw;
-    transform: scaleY(3);
-  }
-  .intro .video-container {
-    height: 65%;
-  }
   .intro .premium__aparment-box {
     transform: translateY(51px);
     margin-left: 20px;
