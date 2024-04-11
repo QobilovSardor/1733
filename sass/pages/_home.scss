@@ -530,7 +530,17 @@
     }
   }
 }
-
+.choose__apartments {
+  .container {
+    .select__filter {
+      .select__filter-inputs {
+        .select__box {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
 // select filter
 .select__filter {
   margin-top: 50px;
@@ -552,7 +562,7 @@
       height: 51px;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       font-size: 14.77px;
       font-weight: 400;
       line-height: 21px;

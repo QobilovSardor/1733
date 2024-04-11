@@ -154,6 +154,9 @@ body.overflow-hidden {
 .leave__request-two .form__input-box {
   display: flex;
   gap: 13px;
+}
+.leave__request .form__input-box:first-child,
+.leave__request-two .form__input-box:first-child {
   margin-bottom: 20px;
 }
 .leave__request .form .form__input,
@@ -194,7 +197,7 @@ body.overflow-hidden {
   font-weight: 400;
   line-height: 19.96px;
   color: #fff;
-  margin: 52px 0 41px 0;
+  margin: 30px 0 41px 0;
 }
 .leave__request .form .privacy__policy-agreement,
 .leave__request-two .form .privacy__policy-agreement {
@@ -929,6 +932,10 @@ body.overflow-hidden {
   line-height: 24.19px;
 }
 
+.choose__apartments .container .select__filter .select__filter-inputs .select__box {
+  justify-content: center;
+}
+
 .select__filter {
   margin-top: 50px;
 }
@@ -950,7 +957,7 @@ body.overflow-hidden {
   height: 51px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: 14.77px;
   font-weight: 400;
   line-height: 21px;
